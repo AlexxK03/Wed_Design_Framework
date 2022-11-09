@@ -1,0 +1,17 @@
+Breakpoints//layouts
+-Phone = stacking (elements on top of eachother)
+-Desktop = displayed flex (i.e elements beside eachother)
+-Code mobile first.
+-then if/when (condition) user is on a bigger screen then flex
+
+Bootstrap Breakpoints
+-Bootstrap implemnts automatic breakpoints to which will sense the width of     the screen and change or hide things on the screen 
+-containers have explicit width for each size tag 
+-fluid fills viewport no matter the width
+
+Grids
+-bootstrap grid is 12 columns
+-container -> row -> column 
+-row is a child of container
+-coulumn is a child of row
+-sm tag changes from side by side to stacked when reaches sm width
