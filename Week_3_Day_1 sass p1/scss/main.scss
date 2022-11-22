@@ -1,0 +1,15 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$primary: rgb(131, 85, 238);
+$secondary: rgb(191, 213, 68);
+
+
+$light:rgb(68, 193, 76);
+
+$enable-rounded:false;
+$enable-shadows:true;
+$enable-gradients:true;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
+
