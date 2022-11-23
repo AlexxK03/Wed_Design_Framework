@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import "../node_modules/bootstrap/scss/functions";
+
+// $enable-rounded:false;
+
+// my theme colours
+
+
+$primary:rgb(0, 255, 174);
+$secondary:rgb(133, 82, 253);
+
+
+$font-family-base: "Comic Neue";
+
+//spacing 
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 2,
+    5: $spacer * 4,
+    6: $spacer * 6,
+
+
+);
+
+
+$border-radius: 3rem;
+
+
+
+@import "../node_modules/bootstrap/scss/variables";
+@import"../node_modules/bootstrap/scss/mixins";
+
+
+
+//my custom colours
+
+$custom-colors:(
+    "contrast": rgb(133, 82, 253)
+);
+
+
+
+//merge
+$theme-colors: map-merge($theme-colors , $custom-colors );
+$theme-colors: map-remove($theme-colors, "danger", "warning", "success", "info" );
+
+//box shadow
+$box-shadow: 0 1rem 3rem rgb(yellow, .75);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
